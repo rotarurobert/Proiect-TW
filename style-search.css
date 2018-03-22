@@ -9,39 +9,71 @@ body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.navbar {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:  #4d4d4d;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.navbar ab {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+}
+
+.navbar ab:hover{
+  background-color: White;
+  color : Black;
+}
+
+.bar {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #595959;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    align-self: center;
+}
+
+.bar ab {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1% 1%;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.bar ab:hover{
+  background-color: White;
+  color : Black;
+}
+
+input{
+  width : 25%;
+  padding: 1% 0%;
+}
+
+button{
+  padding: 1% 1%;
+  margin: 0% 0%;
+  background-color: #1a1aff;
+  color : white;
+  font-weight: bold;
+}
+
 .main {
     margin-left: 15%;
     display: table;
   	width: 100%;
-}
-form.search input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-}
-form.search button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #4CAF50;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-}
-
-form.search button:hover {
-    background: #0b7dda;
-}
-
-form.search::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 .sidenav {
     width: 15%;
@@ -63,12 +95,12 @@ form.search::after {
 .sidenav a:hover {
     color: #064579;
 }
-@media screen and (max-height: 450px) {
+@media (min-width: : 7668px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 .center {
-  background-color: #b6701e;
+  background-color: inherit;
   position: absolute;
   top: 10%;
   right: 2%;
@@ -86,7 +118,7 @@ li{
 }
 
 .flex-container > div {
-  background-color: #404040;
+  background-color: #333399;
   border-radius: 10px;
   width: auto;
   margin-bottom: 10px;
