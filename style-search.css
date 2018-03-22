@@ -1,10 +1,13 @@
 body {
-    background-color: #404040;
+    background: linear-gradient(to top, #cccccc -50px, #202020);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	margin: 0;
-  	font-family: Arial, Helvetica, sans-serif;
 }
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main {
     margin-left: 15%;
@@ -54,7 +57,7 @@ form.search::after {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 0.9em;
-    color: #818181;
+    color: black;
     display: block;
 }
 .sidenav a:hover {
@@ -68,8 +71,8 @@ form.search::after {
   background-color: #b6701e;
   position: absolute;
   top: 10%;
-  right: 0px;
-  width: 85%;
+  right: 2%;
+  width: 82%;
 }
 li{
 	margin-top: 0;
@@ -79,12 +82,16 @@ li{
   display: flex;
   flex-direction: column;
   background-color: inherit;
+  position: relative;
 }
 
 .flex-container > div {
   background-color: #404040;
+  border-radius: 10px;
   width: auto;
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 1%;
   text-align: center;
   line-height: 100px;
   font-size: 1em;
@@ -98,11 +105,32 @@ li{
     border-radius: 4px;
     padding: 5px;
     float: left;
-    left: 50%;
 }
 .item-image:hover {
     box-shadow: 0 0 2px 1px cyan;
 }
 .item-description{
+    text-align: justify;
+    border-top: 0;
+    margin-top: 0;
+    display: inline-block;
+    float: left;
 
+}
+.item-description > p {
+    font-size: 1em;
+    line-height: 80%;
+}
+.seller-description {
+    text-align: justify;
+    border-top: 0;
+    margin-top: 10%;
+    display: inline-block;
+    float: right;
+    overflow: auto;
+    opacity: 0.5;
+}
+.seller-description > p {
+    font-size: 1em;
+    line-height: 80%;
 }
