@@ -77,11 +77,11 @@ button:active::after{
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background: red;
+    background: #ff3f3f;
 }
 
 .cancelbtn:hover{
-  background: #c10000;
+  background: #ff0000;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
