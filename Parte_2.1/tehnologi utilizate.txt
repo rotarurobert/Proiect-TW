@@ -1,0 +1,7 @@
+Tehnologi Utilizate:
+
+	1)HTML5 - Am creat fremework-ul pe care lucaram
+	2)CSS   - L-am folosit pentru dising si animatii
+	3)JavaScript - 
+	4)PHP   -
+	5)SQL Developer - Pentru crearea bazei de date
