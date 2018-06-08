@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/../../Public/css/AuctioX-Login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+  </head>
+  <body>
+    <div class="centru">
+      <form action="AuctioX-Main.html">
+  <div class="imgcontainer">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/41f9B0mX7fL.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="username"><p>Username</p></label>
+    <input type="text" placeholder="Enter Username" id="username" name="username" required>
+    <label for="password"><p>Password</p></label>
+    <input type="password" placeholder="Enter Password" id="password" name="password" required>
+
+    <a href="AuctioX-personaldate.html"><button type="submit">Login</button></a>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container">
+      <a href="AuctioX-Main.html"><button type="button" class="cancelbtn">Cancel</button></a>
+    <span class="psw">Forgot <a href="~/../../app/views/Register/AuctioX-Register.php">Create an Account!</a></span>
+  </div>
+</form>
+    </div>
+  </body>
+</html>
