@@ -8,4 +8,12 @@ class Login extends Controller
   public function index(){
       $this->view('Login/AuctioX-Login');
   }
+  public function verificaUsername()
+  {
+ 		$jsonData = file_get_contents('php://input');
+ 		$jsonData = json_decode($jsonData);
+ 		$username = $jsonData->username;
+ 	  $result = Logi::getPasswordInDB($username);
+ 		echo $result;
+  }
 }

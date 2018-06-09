@@ -11,15 +11,12 @@ class Regi{
           $stmt1->bind_param("ssssss", $username, $password, $first_name, $last_name, $email, $telephone_number);
           $stmt1->execute();
           $stmt1->close();
-
     }
 
-    public static function getUserName($username){
-
+    public static function getUserName($username)
+    {    
          require_once '../app/core/DB.php';
-
          $database = DB::getConnection();
-
          $query = "SELECT count(*) FROM users WHERE `username`=?";
          $stmt = $database->prepare($query);
          $stmt->bind_param("s", $username);

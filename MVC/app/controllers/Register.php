@@ -24,9 +24,8 @@ class Register extends Controller
       echo $result;
 }
 
-      public function verificaEmail(){
-
- 		//$modelcon = $this->model('Model');
+  public function verificaEmail()
+  {
  		$jsonData = file_get_contents('php://input');
  		$jsonData = json_decode($jsonData);
 
