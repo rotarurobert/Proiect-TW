@@ -71,7 +71,7 @@
    							xhr2.addEventListener("load", function loadCallback() {
    							    switch (xhr2.status) {
    							        case 200:
-                            window.location.assign("http://localhost/ProiectTW/MVC/public/Login/AuctioX-Login.php");
+                            window.location.assign("http://localhost/ProiectTW/MVC/public");
    							            console.log("Success, ai inserat in baza de date" + xhr2.response);
    							            break;
    							        case 404:

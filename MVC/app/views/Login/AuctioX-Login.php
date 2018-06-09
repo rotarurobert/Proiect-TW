@@ -34,15 +34,12 @@
   </body>
   <script>
   function logareJ(){
-
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 console.log(username);
 console.log(password);
 let xhr = new XMLHttpRequest();
-
 xhr.open("POST", 'http://localhost/ProiectTW/MVC/public/Login/verificaUsername');
-
 xhr.addEventListener("load", function loadCallback() {
         switch (xhr.status) {
             case 200:
@@ -55,24 +52,20 @@ xhr.addEventListener("load", function loadCallback() {
                 alert("Username-ul sau parola gresite !");
                 document.getElementById("password").value = '';
               }
-
             break;
           case 404:
             console.log("Oups! Not found");
             break;
         }
 });
-
 xhr.addEventListener("error", function errorCallback() {
           console.log("Network error");
 });
-
 let payload = {
     username: `${username}`,
     password: `${password}`
 }
 xhr.send(JSON.stringify(payload));
-
 }
 </script>
 </html>
