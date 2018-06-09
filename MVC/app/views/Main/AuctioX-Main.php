@@ -8,7 +8,7 @@
   <div class="navbar">
     <ab>Hi, <a href="AuctioX-SignIn.html">Sign In</a> or <a href="AuctioX-Register.html">Register<a></ab>
     <a href="#A"><ab>DailyDeals</ab>
-    <a href="AuctioX-SellItem.html"><ab>Sell</ab></a>
+    <a href="http://localhost/ProiectTW/MVC/public/SellItem"><ab>Sell</ab></a>
     <a href="#LogOut"><ab style ="float:right">LogOut</ab></a>
   </div>
 
