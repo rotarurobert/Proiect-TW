@@ -1,0 +1,21 @@
+body {
+    background: #F0F8FF;
+    width: 90%;
+    margin: 0;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.lists{
+	padding-top:5%;
+	padding-left:10%;
+}
+.lists ul{
+	margin:0%;
+	left:0%;
+	list-style:none;
+	position:center;
+	padding-left:10%;
+	padding-right:0%;
+	font-size:2em;
+}
