@@ -9,4 +9,10 @@ class Main extends Controller
       $this->view('Main/AuctioX-Main');
       print_r($_SESSION);
   }
+  public function getEndToday(){
+
+    $data = Mai::getEndTodayData();
+    $data = json_encode($data);
+    echo $data;
+}
 }

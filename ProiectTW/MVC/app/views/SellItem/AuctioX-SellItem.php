@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="~/../css/AuctioX-SellItem.css">
+    <script type="text/javascript" src="~/../../public/Scripts/SellItem.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sell</title>
   </head>
@@ -60,52 +61,5 @@
 </div>
 </form>
 </div>
-  </body>
-  <script>
-  function adaugaInBazaDeDate(){
-        var title = document.getElementById("title").value;
-        var price = document.getElementById("price").value;
-        var specialCharacteristics = document.getElementById("specialCharacteristics").value;
-        var condition = document.getElementById("condition").value;
-        var endDate = document.getElementById("endDate").value;
-        var category = document.getElementById("category").value;
-        var country = document.getElementById("country").value;
-        var description = document.getElementById("description").value;
-          console.log(title);
-          console.log(price);
-          console.log(specialCharacteristics);
-          console.log(condition);
-          console.log(endDate);
-          console.log(category);
-          console.log(country);
-          console.log(description);
-          let xhr2 = new XMLHttpRequest();
-        xhr2.open("POST", "http://localhost/ProiectTW/MVC/public/SellItem/adaugaInDB");
-        xhr2.addEventListener("load", function loadCallback() {
-            switch (xhr2.status) {
-                case 200:
-                    window.location.assign("http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php");
-                    console.log("Success, ai inserat in baza de date" + xhr2.response);
-                    break;
-                case 404:
-                    console.log("Oups! Not found");
-                    break;
-            }
-        });
-        xhr2.addEventListener("error", function errorCallback() {
-            console.log("Network error");
-        });
-        let payload = {
-          title: `${title}`,
-          price: `${price}`,
-          specialCharacteristics: `${specialCharacteristics}`,
-          condition: `${condition}`,
-          endDate: `${endDate}`,
-          category: `${category}`,
-          country: `${country}`,
-          description: `${description}`
-            }
-        xhr2.send(JSON.stringify(payload));
-          }
-</script>
+</body>
 </html>
