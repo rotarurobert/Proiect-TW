@@ -7,6 +7,7 @@ class Main extends Controller
 {
   public function index(){
       $this->view('Main/AuctioX-Main');
+
   }
   public function getEndToday(){
     $data = Mai::getEndTodayData();

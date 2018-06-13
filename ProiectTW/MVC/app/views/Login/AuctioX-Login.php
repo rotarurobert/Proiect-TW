@@ -8,7 +8,8 @@
     <title>Sign In</title>
   </head>
   <body>
-    <div class="centru">
+
+  <div class="centru">
       <form>
   <div class="imgcontainer">
     <img src="https://images-na.ssl-images-amazon.com/images/I/41f9B0mX7fL.png" alt="Avatar" class="avatar">
@@ -21,15 +22,14 @@
     <input type="password" placeholder="Enter Password..." id="password" name="password" required>
 
     <button type="button" onclick="logareJ()">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+
   </div>
 
   <div class="container">
-      <a><button type="button" class="cancelbtn">Cancel</button></a>
-    <span class="psw"><a href="http://localhost/ProiectTW/MVC/public/Register">Create an Account!</a></span>
+      <a href="http://localhost/ProiectTW/MVC/public/Register"><button type="button" class="registerbtn">Register</button></a>
+        <a href="http://localhost/ProiectTW/MVC/public/ForgotPassword"><button type="button" class="forgotpassbtn">Forgot Password</button></a>
   </div>
+
       </form>
     </div>
   </body>

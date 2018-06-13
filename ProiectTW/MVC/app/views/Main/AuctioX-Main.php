@@ -9,13 +9,12 @@
 <body onload = "getEndTodayInformation()">
   <nav class="nav">
     <ul class="navBar">
-      <li class="listanga"><a href="AuctioX-Main.html">Home</a></li>
-      <li><a href="#A">EndToday</a></li>
+      <li class="listanga"><a href="http://localhost/ProiectTW/MVC/public/Main">Home</a></li>
+      <li><a href="http://localhost/ProiectTW/MVC/public/AtomFeed">Atom FEED</a></li>
       <li><a href="http://localhost/ProiectTW/MVC/public/SellItem">Sell</a></li>
       <li>My Account
         <ul class="navBar">
           <li><a href="http://localhost/ProiectTW/MVC/public/Profile">Profile</a></li>
-          <li><a href="">Safety Settings</a></li>
           <li><a href="">Items on Sell</a></li>
           <li><a href="">Items Bought</a></li>
         </ul>
@@ -28,10 +27,7 @@
     </form>
   </nav>
 
-  <div class="top2">
-    <p>ATOM feed incoming ! </p>
 
-  </div>
 
 <hr>
 <a name="A"><div class="content"><b> Auctions that end today ! </b></div></a>

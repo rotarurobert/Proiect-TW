@@ -7,9 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body onload="getProfileInformation()">
 
+  <nav class="nav">
+    <ul class="navBar">
+      <li class="listanga"><a href="http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Home</a></li>
+      <li><a href="#A">EndToday</a></li>
+      <li><a href="http://localhost/ProiectTW/MVC/public/SellItem">Sell</a></li>
+      <li>My Account
+        <ul class="navBar">
+          <li><a href="http://localhost/ProiectTW/MVC/public/Profile">Profile</a></li>
+          <li><a href="">Items on Sell</a></li>
+          <li><a href="">Items Bought</a></li>
+        </ul>
+      </li>
+      <li class="listadreapta"><a href="http://localhost/ProiectTW/MVC/public/Logout">LogOut</a></li>
+    </ul>
+    <form class="search-form">
+      <input type="text" placeholder="Search">
+      <a href=""><button type="button">Search</button></a>
+    </form>
+  </nav>
 
 
-   <div>
+
+   <div class="top2">
     <ul>
       <li>                                                      <a href = "http://localhost/ProiectTW/MVC/public/ChangePassword">        <button type="button">Change Password</button> </a> </li>
       <li>First-Name:       <span id="first_name"></span>       </li>
@@ -20,6 +40,6 @@
 
     </ul>
   </div>
-</div>
+
 </body>
 </html>
