@@ -30,17 +30,18 @@
 
   <div class="top2">
     <p>ATOM feed incoming ! </p>
+
   </div>
 
 <hr>
 <a name="A"><div class="content"><b> Auctions that end today ! </b></div></a>
 
 <section>
-  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span><span id="end_today1name"></span> Price: <span><span id ="end_today1price"></span>€</a></div>
-  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span><span id="end_today2name"></span> Price: <span><span id ="end_today2price"></span>€</a></div>
-  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span><span id="end_today3name"></span> Price: <span><span id ="end_today3price"></span>€</a></div>
-  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span><span id="end_today4name"></span> Price: <span><span id ="end_today4price"></span>€</a></div>
-  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span><span id="end_today5name"></span> Price: <span><span id ="end_today5price"></span>€</a></div>
+  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span id="end_today1name"></span> Price: <span id ="end_today1price"></span>€</a></div>
+  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span id="end_today2name"></span> Price: <span id ="end_today2price"></span>€</a></div>
+  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span id="end_today3name"></span> Price: <span id ="end_today3price"></span>€</a></div>
+  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span id="end_today4name"></span> Price: <span id ="end_today4price"></span>€</a></div>
+  <div class="best-prices"><a href = "http://localhost/ProiectTW/MVC/public/Main/AuctioX-Main.php">Name: <span id="end_today5name"></span> Price: <span id ="end_today5price"></span>€</a></div>
 </section>
 <hr>
 <p><b> What is AuctioX? </b></p>

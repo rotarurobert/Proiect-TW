@@ -25,7 +25,7 @@ class Mai{
           $query="SELECT name FROM products WHERE
                   extract(day FROM enddate) = extract(day FROM sysdate()) AND
                   extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                  extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 1,1";
+                  extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 0,1";
           $stmt=$database->prepare($query);
           $stmt->execute();
           $stmt->bind_result($end_today1);
@@ -43,7 +43,7 @@ class Mai{
             $query="SELECT name FROM products WHERE
                     extract(day FROM enddate) = extract(day FROM sysdate()) AND
                     extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                    extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 2,1";
+                    extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 1,1";
             $stmt=$database->prepare($query);
             $stmt->execute();
             $stmt->bind_result($end_today2);
@@ -61,7 +61,7 @@ class Mai{
               $query="SELECT name FROM products WHERE
                       extract(day FROM enddate) = extract(day FROM sysdate()) AND
                       extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                      extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 3,1";
+                      extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 2,1";
               $stmt=$database->prepare($query);
               $stmt->execute();
               $stmt->bind_result($end_today3);
@@ -79,7 +79,7 @@ class Mai{
                 $query="SELECT name FROM products WHERE
                         extract(day FROM enddate) = extract(day FROM sysdate()) AND
                         extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                        extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 4,1";
+                        extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 3,1";
                 $stmt=$database->prepare($query);
                 $stmt->execute();
                 $stmt->bind_result($end_today4);
@@ -98,7 +98,7 @@ class Mai{
                   $query="SELECT name FROM products WHERE
                           extract(day FROM enddate) = extract(day FROM sysdate()) AND
                           extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                          extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 5,1";
+                          extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 4,1";
                   $stmt=$database->prepare($query);
                   $stmt->execute();
                   $stmt->bind_result($end_today5);
@@ -116,7 +116,7 @@ class Mai{
                     $query="SELECT start_price FROM products WHERE
                             extract(day FROM enddate) = extract(day FROM sysdate()) AND
                             extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                            extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 1,1";
+                            extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 0,1";
                     $stmt=$database->prepare($query);
                     $stmt->execute();
                     $stmt->bind_result($end_today1price);
@@ -134,7 +134,7 @@ class Mai{
                       $query="SELECT start_price FROM products WHERE
                               extract(day FROM enddate) = extract(day FROM sysdate()) AND
                               extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                              extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 2,1";
+                              extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 1,1";
                       $stmt=$database->prepare($query);
                       $stmt->execute();
                       $stmt->bind_result($end_today2price);
@@ -152,7 +152,7 @@ class Mai{
                         $query="SELECT start_price FROM products WHERE
                                 extract(day FROM enddate) = extract(day FROM sysdate()) AND
                                 extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                                extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 3,1";
+                                extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 2,1";
                         $stmt=$database->prepare($query);
                         $stmt->execute();
                         $stmt->bind_result($end_today3price);
@@ -170,7 +170,7 @@ class Mai{
                           $query="SELECT start_price FROM products WHERE
                                   extract(day FROM enddate) = extract(day FROM sysdate()) AND
                                   extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                                  extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 4,1";
+                                  extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 3,1";
                           $stmt=$database->prepare($query);
                           $stmt->execute();
                           $stmt->bind_result($end_today4price);
@@ -189,7 +189,7 @@ class Mai{
                             $query="SELECT start_price FROM products WHERE
                                     extract(day FROM enddate) = extract(day FROM sysdate()) AND
                                     extract(month FROM enddate) = extract(month FROM sysdate()) AND
-                                    extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 5,1";
+                                    extract(year FROM enddate) = extract(year FROM sysdate()) ORDER BY start_price LIMIT 4,1";
                             $stmt=$database->prepare($query);
                             $stmt->execute();
                             $stmt->bind_result($end_today5price);

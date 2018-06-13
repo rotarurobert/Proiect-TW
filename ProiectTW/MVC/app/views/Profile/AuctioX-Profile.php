@@ -8,16 +8,18 @@
 <body onload="getProfileInformation()">
 
 
-</div>
-<div class='lists'>
-<ul>
-	 <li><b>First-Name: <span id="first_name"></b></li>
-   <li><b>Last-Name: <span id="last_name"></b></li>
-	 <li><b>Telephone-number: <span id="telephone_number"></b></li>
-	 <li><b>Email: <span id="email"></b></li>
-	 <li><b>Adress: <span id="adress"></b></li>
-	 </ul>
-	 </div>
+
+   <div>
+    <ul>
+      <li>                                                      <a href = "http://localhost/ProiectTW/MVC/public/ChangePassword">        <button type="button">Change Password</button> </a> </li>
+      <li>First-Name:       <span id="first_name"></span>       </li>
+      <li>Last-Name:        <span id="last_name"></span>        </li>
+      <li>Email:            <span id="email"></span>            <a href = "http://localhost/ProiectTW/MVC/public/ChangeEmail">           <button type="button">Change Email</button> </a></li>
+      <li>Address:          <span id="adress"></span>           <a href = "http://localhost/ProiectTW/MVC/public/ChangeAddress">         <button type="button">Change Address</button> </a></li>
+      <li>Telephone-Number: <span id="telephone_number"></span> <a href = "http://localhost/ProiectTW/MVC/public/ChangeTelephoneNumber"> <button type="button">Change Telephone-Number</button> </a></li>
+
+    </ul>
+  </div>
 </div>
 </body>
 </html>

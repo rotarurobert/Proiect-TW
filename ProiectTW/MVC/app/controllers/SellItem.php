@@ -1,6 +1,5 @@
 <?php
 
-
 require_once "../app/models/sellitem_model.php";
 class SellItem extends Controller
 {
@@ -19,7 +18,6 @@ class SellItem extends Controller
     $country = $jsonData->country;
     $description = $jsonData->description;
     $endDate = $jsonData->endDate;
-
 
     $result = Sell::insertProduct($title, $price, $specialCharacteristics, $condition, $country, $description, $category, $endDate);
     echo $result;

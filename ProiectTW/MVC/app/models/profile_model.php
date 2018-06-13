@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class Profi{
   public static function getPersonalInfoData($username){
         $personalInfoData['first_name'] = self::getFirstName($username);

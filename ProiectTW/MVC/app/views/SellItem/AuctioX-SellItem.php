@@ -56,10 +56,11 @@
   <label for="description"><b>Enter a description</b></label>
   <textarea style="width:99%; height:150px" type="text" placeholder="Description.." required name="description" id="description"></textarea>
 
+  <input type="file" name="fileToUpload" id="fileToUpload">
+
 
   <button type="button" onclick = "adaugaInBazaDeDate()">Submit</button>
 </div>
-</form>
 </div>
 </body>
 </html>
