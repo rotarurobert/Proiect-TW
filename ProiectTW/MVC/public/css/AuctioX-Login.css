@@ -39,7 +39,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 0px;
     -webkit-transition-duration: 0.4s; /*safari*/
     transition-duration: 0.4s;
     cursor: pointer;
@@ -75,13 +75,27 @@ button:active::after{
   transition: 0s;
 }
 
-.cancelbtn {
+.forgotpassbtn {
     width: auto;
     padding: 10px 18px;
     background: #ff3f3f;
+    float:right;
 }
 
-.cancelbtn:hover{
+.forgotpassbtn:hover{
+  background: #ff0000;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.registerbtn {
+    width: auto;
+    padding: 10px 18px;
+    background: #ff3f3f;
+    float:left;
+}
+
+.registerbtn:hover{
   background: #ff0000;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 
