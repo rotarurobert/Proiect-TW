@@ -14,7 +14,9 @@ class ForgotPassword extends Controller
 
       $result  = ForgotPass::getEmailAddressM($username);
       $result1 = ForgotPass::getPasswordM($username);
+
       Email::sendEmail($result, "Hello! Your AuctioX password is: ".$result1);
+      
       echo $result;
 }
 }

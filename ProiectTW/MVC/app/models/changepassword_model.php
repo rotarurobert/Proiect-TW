@@ -1,7 +1,7 @@
 <?php
 
 class Password{
-  public static function getPassword($username)
+  public static function getPasswordM($username)
   {
        require_once '../app/core/DB.php';
        $database = DB::getConnection();
@@ -11,11 +11,11 @@ class Password{
        $stmt->execute();
        $stmt->bind_result($passwordInDB);
        $stmt->fetch();
-         echo $passwordInDB;
+        return $passwordInDB;
        $stmt->close();
    }
 
-   public static function updatePassword($username, $password)
+   public static function updatePasswordM($username, $password)
    {
          require_once '../app/core/DB.php';
          $database = DB::getConnection();

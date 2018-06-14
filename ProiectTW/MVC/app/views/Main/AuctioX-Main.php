@@ -10,7 +10,7 @@
   <nav class="nav">
     <ul class="navBar">
       <li class="listanga"><a href="http://localhost/ProiectTW/MVC/public/Main">Home</a></li>
-      <li><a href="http://localhost/ProiectTW/MVC/public/AtomFeed">Atom FEED</a></li>
+      <li><a href="http://localhost/ProiectTW/feed.php">Atom FEED</a></li>
       <li><a href="http://localhost/ProiectTW/MVC/public/SellItem">Sell</a></li>
       <li>My Account
         <ul class="navBar">

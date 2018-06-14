@@ -14,13 +14,14 @@ class ChangePassword extends Controller
 
       $password = $jsonData->oldpassword;
       $username = $_SESSION['username'];
-      $result = Password::getPassword($username);
-      if($result = $password){
-        return 1;
+      $result = Password::getPasswordM($username);
+      if($password != $result)
+      {
+       echo 0;
       }
       else
       {
-        return 0;
+       echo 1;
       }
     }
 
@@ -32,7 +33,7 @@ class ChangePassword extends Controller
       		$username = $_SESSION['username'];
       		$password = $jsonData->password;
 
-      		$result = Password::updatePassword($username, $password);
-          echo $result;
+      		$result = Password::updatePasswordM($username, $password);
+          return $result;
     }
   }
