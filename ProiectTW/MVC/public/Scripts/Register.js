@@ -33,7 +33,6 @@
                 if (xhr.response == 0){
             alert("Esti inregistrat deja");
             document.getElementById('username').value = '';
-            console.log("esti pe if-ul pentru verificaEmail");
           }else{
             //parolele nu corespund
               if (password !== password1){

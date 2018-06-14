@@ -14,19 +14,19 @@ function GggJ(){
         xhr.addEventListener("load", function loadCallback() {
             switch (xhr.status) {
                 case 200:
-                    console.log("Succ " + xhr.response);
-                                console.log(xhr.response);
-                    if (xhr.response == 0){
-                alert("Parola Gresita");
-                document.getElementById('oldpassword').value = '';
-              }else{
+                    if (xhr.response == 0 ){
+                      alert("Parola Gresita");
+                        document.getElementById('oldpassword').value = '';
+                  }
+
+              else{
                 //parolele nu corespund
                   if (password != password1){
                     alert("Parolele nu corespund");
                     document.getElementById('newpassword').value = '';
                     document.getElementById('newpassword1').value = '';
-                    console.log("parolele nu corespund");
-                  } else {
+                  }
+                    else {
                     let xhr2 = new XMLHttpRequest();
                   xhr2.open("POST", "http://localhost/ProiectTW/MVC/public/ChangePassword/updatePassword");
 
